@@ -9,6 +9,7 @@ export const TodoItem = ({
     <li className="list-group-item d-flex justify-content-between">
       <span
         onClick={() => onToggleState(id)}
+        aria-label="span"
         className={`align-self-center ${
           (done && 'text-decoration-line-through') || ''
         }`}
